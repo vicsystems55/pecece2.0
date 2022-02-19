@@ -17,6 +17,17 @@
                                <li><router-link to="/post">Post</router-link></li>
                                <li><router-link to="/authors-profile">Author</router-link></li>
                                <li><router-link to="/authors-profile">Create New</router-link></li>
+
+                               <li>
+                                   <a href="#">Profile</a>
+                                   <ul>
+                                       <li><a to="/authors-profile">Profile Page</a></li>
+                                       <li><a data-href="#login" class="getModal">Login</a></li>
+                                       <li><a data-href="#registration" class="getModal">Registration</a></li>
+                                       <li><a data-href="#recover-pass" class="getModal">Recover pass</a></li>
+                                       <li><a data-href="#success-recover-pass" class="getModal">Success Recover</a></li>
+                                   </ul>
+                               </li>
                                
                            </ul>
                        </div>
@@ -392,3 +403,9 @@
 
     </div>
 </template>
+<script>
+
+export default {
+    
+}
+</script>

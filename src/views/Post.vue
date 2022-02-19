@@ -3,7 +3,7 @@
             <div class="wrap">
                 <div class="wrap_float">
                     <div class="breadcrumbs">
-                        <a href="/">Home</a> - <a href="#" class="current">Blog Page Fullwidth</a>
+                        <a href="/">Pecece</a> - <a href="#" class="current">Blog Page Fullwidth</a>
                     </div>
                     <div class="page_content">
                         <div class="post-image ie-img">
@@ -219,3 +219,21 @@
             </div>
         </div>
 </template>
+
+<script>
+export default {
+    mounted() {
+        // alert('yest')
+        // this.$router.go()
+        if (localStorage.getItem('reloaded')) {
+        // The page was just reloaded. Clear the value from local storage
+        // so that it will reload the next time this page is visited.
+        localStorage.removeItem('reloaded');
+        } else {
+            // Set a flag so that we know not to reload the page twice.
+            localStorage.setItem('reloaded', '1');
+            location.reload();
+        }
+  },
+}
+</script>
