@@ -16,6 +16,7 @@
                                <li><router-link to="/blog">Blog</router-link></li>
                                <li><router-link to="/post">Post</router-link></li>
                                <li><router-link to="/authors-profile">Author</router-link></li>
+                               <li><router-link to="/authors-profile">Create New</router-link></li>
                                
                            </ul>
                        </div>
@@ -24,9 +25,7 @@
                         <div class="search" id="search-link">
                             <div class="search-open"></div>
                         </div>
-                        <a href="cart.html" class="cart">
-                            <span>22</span>
-                        </a>
+                       
                     </div>
                 </div>
             </div>

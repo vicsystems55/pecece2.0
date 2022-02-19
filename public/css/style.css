@@ -109,6 +109,13 @@ Pages styles
   font-family: Fontawesome;
   src: url(fonts/fontawesome-webfont.woff);
 }
+
+
+.d-none{
+  display: none;
+}
+
+
 ._Bold {
   font-weight: 700;
 }
